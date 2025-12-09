@@ -1,0 +1,15 @@
+baseURL = "http://localhost:1313/"          # we'll change this later for real deploy
+languageCode = "en-us"
+title = "DeFi Scholar"
+theme = "ananke"
+
+[params]
+description = "High Schooler’s Guide to Decentralized Finance"
+author = "markurusov1 & friends"
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
