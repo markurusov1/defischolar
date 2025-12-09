@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"          # we'll change this later for real deploy
+baseURL = "https://markurusov1.github.io/defischolar_site/"         # we'll change this later for real deploy
 languageCode = "en-us"
 title = "DeFi Scholar"
 theme = "ananke"
