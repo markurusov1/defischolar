@@ -1,16 +1,13 @@
 baseURL = "https://markurusov1.github.io/defischolar_site/"
-publishDir = "docs"
 languageCode = "en-us"
-title = "DeFi Scholar"
-theme = "ananke"
+title = "DeFi Scholar: High Schooler’s Guide to Decentralized Finance"
+
+enableGitInfo = true
+
+[module]
+[[module.imports]]
+path = "github.com/gethinode/hinode"
 
 [params]
-description = "High Schooler's Guide to Decentralized Finance"
-author = "markurusov1 & friends"
-
-[menu]
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
+description = "Learn DeFi together—by high schoolers, for high schoolers."
+darkModeToggle = true  # Easy site-wide theme switcher
