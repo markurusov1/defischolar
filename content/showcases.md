@@ -7,4 +7,4 @@ layout: landing
 
 # At the moment this page is empty
 
-<div>
+</div>

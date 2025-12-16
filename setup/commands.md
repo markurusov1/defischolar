@@ -2,17 +2,22 @@
 
 ## Hugo 
 
-### clean up generated
-- Remove-Item -Recurse -Force resources, public
+### Clean up Hugo-generated site static files
 
-### start hugo server with full site rebuild
-hugo server --disableFastRender
+```Remove-Item -Recurse -Force resources, public```
 
-### cleans up  project's Go module files by removing unused dependencies
-hugo modl tidy
+### Start the Hugo server with a full site rebuild
+
+```hugo server --disableFastRender```
+
+### Cleans up the project's Go module files by removing unused dependencies
+
+```hugo mod tidy```
 
 ### site build in default mode
-hugo
+
+```hugo```
 
 ### server start in default mode
-hugo server
+
+```hugo server```

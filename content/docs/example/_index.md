@@ -4,7 +4,7 @@ bookFlatSection: true
 title: "Example Site"
 ---
 
-# Introduction
+# Welcome to DeFi Scholar!
 
 ## Ferre hinnitibus erat accipitrem dixi Troiae tollens
 

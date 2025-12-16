@@ -6,7 +6,8 @@
 Git
 
 ### Shell
-Powershell (not Windows Powershell)
+
+PowerShell (not Windows PowerShell)
 
 ### IDE
 
@@ -24,7 +25,7 @@ IntelliJ
 
 https://github.com/alex-shpak/hugo-book/blob/main/README.md#installation
 
-### Considered, but not used
+### Considered but not used
 
 - Perplex 
 - Hugo Relearn Theme 
@@ -38,12 +39,12 @@ https://github.com/alex-shpak/hugo-book/blob/main/README.md#installation
 
 ### Site repo
 
-- Github repo:https://github.com/markurusov1/defischolar_site
-- Git workflow for gitpages
+- GitHub repo:https://github.com/markurusov1/defischolar_site
+- Git workflow for Git pages
 
 ### Code repo (TBD)
 Git pages: https://markurusov1.github.io/defischolar
 
-## Gitpages
+## Git pages
 
 https://markurusov1.github.io/defischolar_site/
