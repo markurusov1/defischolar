@@ -1,5 +1,52 @@
 <style>
-    /* This style block remains */
+    /* --------------------------------------------------- */
+    /* 1. THEME COLOR DEFINITIONS (HIGH SPECIFICITY OVERRIDES) */
+    /* --------------------------------------------------- */
+
+    /* Default (Light) Theme Variables */
+    :root, [data-theme="light"] {
+        /* Standard Light Colors */
+        --book-bg: #fff;
+        --book-text: #222;
+        --book-panel-bg: #f7f7f7;
+        --book-border: #eee;
+        --book-menu-color: #222;
+        --book-section-color: #000;
+        --book-hint-bg: #f9f9f9;
+        --book-code-bg: #f9f9f9;
+        --book-code-text: #222;
+    }
+
+    /* Apply Light Theme Colors to Page Elements */
+    :root body, [data-theme="light"] body {
+        background: var(--book-bg);
+        color: var(--book-text);
+    }
+
+    /* Dark Theme Overrides */
+    [data-theme="dark"] {
+        /* Standard Dark Colors */
+        --book-bg: #1e1e1e;
+        --book-text: #eee;
+        --book-panel-bg: #333;
+        --book-border: #444;
+        --book-menu-color: #eee;
+        --book-section-color: #f7f7f7;
+        --book-hint-bg: #2d2d2d;
+        --book-code-bg: #2d2d2d;
+        --book-code-text: #eee;
+    }
+
+    /* Apply Dark Theme Colors to Page Elements - Targets the body directly */
+    [data-theme="dark"] body {
+        background: var(--book-bg);
+        color: var(--book-text);
+    }
+
+    /* ---------------------------------- */
+    /* 2. TOGGLE BUTTON STYLING (Icon Color) */
+    /* ---------------------------------- */
+
     #theme-toggle {
         background: none;
         border: none;
@@ -10,6 +57,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        /* Set icon color using our defined variable */
+        color: var(--book-text);
+        transition: color 0.2s;
     }
 
     #theme-toggle .icon {
@@ -17,9 +68,10 @@
         height: 20px;
     }
 
-    #theme-toggle .sun { display: block; }
-    #theme-toggle .moon { display: none; }
+    /* Set icon visibility based on the theme attribute */
+    [data-theme="light"] #theme-toggle .sun { display: none; }
+    [data-theme="light"] #theme-toggle .moon { display: block; }
 
-    [data-theme="dark"] #theme-toggle .sun { display: none; }
-    [data-theme="dark"] #theme-toggle .moon { display: block; }
+    [data-theme="dark"] #theme-toggle .sun { display: block; }
+    [data-theme="dark"] #theme-toggle .moon { display: none; }
 </style>
