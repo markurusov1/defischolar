@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
-    <link>http://localhost:1313/defischolar_site/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <title>Tags on DeFi Scholar</title>
+    <link>https://markurusov1.github.io/defischolar_site/tags/</link>
+    <description>Recent content in Tags on DeFi Scholar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/defischolar_site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://markurusov1.github.io/defischolar_site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development</title>
-      <link>http://localhost:1313/defischolar_site/tags/development/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/development/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/development/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:1313/defischolar_site/tags/go/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/go/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>http://localhost:1313/defischolar_site/tags/golang/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/golang/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/defischolar_site/tags/hugo/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/hugo/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Templates</title>
-      <link>http://localhost:1313/defischolar_site/tags/templates/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/templates/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/templates/</guid>
       <description></description>
     </item>
     <item>
       <title>Themes</title>
-      <link>http://localhost:1313/defischolar_site/tags/themes/</link>
+      <link>https://markurusov1.github.io/defischolar_site/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/defischolar_site/tags/themes/</guid>
+      <guid>https://markurusov1.github.io/defischolar_site/tags/themes/</guid>
       <description></description>
     </item>
   </channel>

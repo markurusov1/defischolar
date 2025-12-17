@@ -1,6 +1,6 @@
 baseURL = 'https://markurusov1.github.io/defischolar_site/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DeFi Scholar'
 
 [module]
 [[module.imports]]

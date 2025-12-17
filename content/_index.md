@@ -6,41 +6,43 @@ layout: landing
 <div class="book-hero">
 
 # DeFi Scholar {anchor=false}
-[Hugo](https://gohugo.io) documentation theme as simple as plain book
+Decentralized Finance by a high schooler for high schoolers
 
-{{<button href="/docs/example">}}Let's get started!{{</button>}}
-
+{{<button href="/docs/sections">}}Let's get started!{{</button>}}
 </div>
+{{% columns %}}
+
+- ## The Journey
+  I started this project out of interest in Finance as a future college major. DeFi seemed to be much more
+  accessible, yet there was a lot to learn. As a high schooler myself, I wanted to create a resource that would
+  make DeFi easier to understand for other high schoolers. Thus, DeFi Scholar was born.
+
+- ## The project
+  To stay practical, I decided to create (code) an actual DeFi application, centered on Uniswap V4 protocol. This
+  site contains the notes I took along the way, organized into the sections below
+  {{% /columns %}}
 
 {{% columns %}}
-- ## What Hugo-Book Theme Is
-  Hugo book theme is primarily designed to create technical documentation sites that are easy to read, write, navigate and maintain. It is an attempt to create a sustainable web project.
 
-- ## What Hugo-Book Theme Is Not
-  Book theme is not trying to implement all features but to create a starting point. It is mostly feature complete and gets updated and improved to stay relevant with Hugo and modern web.
-{{% /columns %}}
-
-
-{{% columns %}}
 - {{< card >}}
-  ## Probably fast
+  ## Introduction
   Build on Hugo static site generator. "The world’s fastest framework for building websites".
   {{< /card >}}
 
 - {{< card >}}
-  ## 50% JS free
+  ## Currencies
   All important features are working even with JavaScript disabled in browser, including interactive shortcodes.
   {{< /card >}}
 
 - {{< card >}}
-  ## Minimalistic
+  ## Blockchain by example
   For real, it is very minimalistic, black on white. No extra tools are needed to build the site, only Hugo. No heavy JS or CSS frameworks included.
   {{< /card >}}
-{{% /columns %}}
+  {{% /columns %}}
 
 {{% columns %}}
 - {{< card >}}
-  ### Shortcodes
+  ### Blockchain: step by step
   Pretty good shortcodes are included to enhance markup files:
   [Columns](/docs/shortcodes/columns/),
   [Cards](/docs/shortcodes/experimental/cards/),
@@ -52,16 +54,24 @@ layout: landing
   {{< /card >}}
 
 - {{< card >}}
-  ### Even more
+  ### Blockchain networks
   Do people actually read these? I thought it was just a visual filler. But there is full-text search and multi-language support.
   {{< /card >}}
 
 - {{< card >}}
-  ### Made to be extendable
+  ### Smart contracts
   There are multiple points to inject own styles and templates to make your documentation your own.
   {{< /card >}}
-{{% /columns %}}
+  {{% /columns %}}
+  {{% columns %}}
+ {{< card >}}
+### Exchanges, Pools and Liquidity
+  There are multiple points to inject own styles and templates to make your documentation your own.
+  {{< /card >}}
+  {{% /columns %}}
 
-[{{< badge style="info" title="Hugo" value="0.146" >}}](https://github.com/gohugoio/hugo/releases/tag/v0.146.7) 
-[{{< badge style="default" title="License" value="MIT" >}}](https://github.com/alex-shpak/hugo-book/blob/main/LICENSE)
-
+### License badges
+[{{< badge style="info" title="Hugo" value="0.146" >}}](https://github.com/gohugoio/hugo/releases/tag/v0.146.7)
+[{{< badge style="default" title="Code License" value="MIT" >}}](https://github.com/markurusov1/defischolar_site/blob/main/LICENSE)
+[{{< badge style="default" title="Content License" value="CC BY 4.0" >}}](https://github.com/markurusov1/defischolar_site/blob/main/LICENSE-CONTENT)
+[{{< badge style="default" title="Theme License" value="MIT" >}}](https://github.com/alex-shpak/hugo-book/blob/main/LICENSE)

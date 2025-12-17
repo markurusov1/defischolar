@@ -1,6 +1,6 @@
 {
-  "name": "My New Hugo Site",
-  "short_name": "My New Hugo Site",
+  "name": "DeFi Scholar",
+  "short_name": "DeFi Scholar",
   "start_url": "/defischolar_site/",
   "scope": "/defischolar_site/",
   "display": "standalone",
