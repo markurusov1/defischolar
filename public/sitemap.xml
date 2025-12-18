@@ -2,106 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/</loc>
+    <loc>https://markurusov1.github.io/defischolar_site/docs/start/</loc>
   </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/table-of-contents/with-toc/</loc>
+    <loc>https://markurusov1.github.io/defischolar_site/docs/start/basic_terminology/</loc>
   </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/table-of-contents/without-toc/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/table-of-contents/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/collapsed/</loc>
+    <loc>https://markurusov1.github.io/defischolar_site/docs/currencies_and_trust/</loc>
   </url><url>
     <loc>https://markurusov1.github.io/defischolar_site/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://markurusov1.github.io/defischolar_site/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/collapsed/3rd-level/4th-level/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/collapsed/3rd-level/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/sections/hidden/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/buttons/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/columns/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/details/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/experimental/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/experimental/asciinema/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/experimental/badges/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/experimental/cards/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/experimental/images/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/hints/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/mermaid/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/section/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/section/first-page/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/section/second-page/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/steps/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/tabs/</loc>
   </url><url>
     <loc>https://markurusov1.github.io/defischolar_site/docs/</loc>
   </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/docs/shortcodes/katex/</loc>
-  </url><url>
-    <loc>https://markurusov1.github.io/defischolar_site/showcases/</loc>
+    <loc>https://markurusov1.github.io/defischolar_site/tags/</loc>
   </url>
 </urlset>

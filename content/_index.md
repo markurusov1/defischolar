@@ -8,7 +8,7 @@ layout: landing
 # DeFi Scholar {anchor=false}
 Decentralized Finance by a high schooler for high schoolers
 
-{{<button href="/docs/sections">}}Let's get started!{{</button>}}
+{{<button href="/docs/start">}}Let's get started!{{</button>}}
 </div>
 {{% columns %}}
 
@@ -17,56 +17,57 @@ Decentralized Finance by a high schooler for high schoolers
   accessible, yet there was a lot to learn. As a high schooler myself, I wanted to create a resource that would
   make DeFi easier to understand for other high schoolers. Thus, DeFi Scholar was born.
 
-- ## The project
+- ## The Project
   To stay practical, I decided to create (code) an actual DeFi application, centered on Uniswap V4 protocol. This
-  site contains the notes I took along the way, organized into the sections below
+  site contains the notes I took along the way, organized (by Gen AI) into the sections below.
   {{% /columns %}}
 
 {{% columns %}}
 
 - {{< card >}}
-  ## Introduction
-  Build on Hugo static site generator. "The world’s fastest framework for building websites".
+  ## Introduction: What, Why, and How
+  __Summary__: DeFi (Decentralized Finance) represents the programmable future of money where traditional financial 
+  barriers are replaced by transparent, efficient, and open systems. For aspiring finance majors, understanding this 
+  shift is essential as the industry moves away from central authorities toward peer-to-peer networks.
   {{< /card >}}
 
 - {{< card >}}
-  ## Currencies
-  All important features are working even with JavaScript disabled in browser, including interactive shortcodes.
+  ## Currencies and Trust
+  __Summary__: Explore the three types of digital value: Fiat-issued currencies, stablecoins pegged to traditional 
+  money, and unbacked cryptocurrencies like Bitcoin. Understand why Bitcoin is often called "digital gold" due to its limited supply and the shift from trusting governments to trusting math and code.
   {{< /card >}}
 
 - {{< card >}}
-  ## Blockchain by example
-  For real, it is very minimalistic, black on white. No extra tools are needed to build the site, only Hugo. No heavy JS or CSS frameworks included.
+  ## Basic Terminology & Networks
+  __Summary__: At its core, DeFi relies on blockchain technology—a decentralized network of "nodes" (computers or 
+  people) that operate without a central authority. This section introduces key concepts like tokens (Bitcoin, Ethereum, stablecoins), P2P (peer-to-peer) interactions, and the cryptographic algorithms that make these systems secure.
   {{< /card >}}
   {{% /columns %}}
 
 {{% columns %}}
 - {{< card >}}
   ### Blockchain: step by step
-  Pretty good shortcodes are included to enhance markup files:
-  [Columns](/docs/shortcodes/columns/),
-  [Cards](/docs/shortcodes/experimental/cards/),
-  [Tabs](/docs/shortcodes/tabs/),
-  [Images](/docs/shortcodes/experimental/images/),
-  [Asciinema](/docs/shortcodes/experimental/asciinema/),
-  [KaTex](/docs/shortcodes/katex/),
-  [Mermaid](/docs/shortcodes/mermaid/) and others.
+  __Summary__: A deep dive into how transactions actually move through a distributed, immutable ledger. Learn about the 
+  role of miners who verify transactions, the "Proof of Work" puzzles that prevent cheating, and how the network reaches consensus to ensure every digital dollar is accounted for without a bank..
   {{< /card >}}
 
 - {{< card >}}
   ### Blockchain networks
-  Do people actually read these? I thought it was just a visual filler. But there is full-text search and multi-language support.
+  __Summary__: Not all blockchains are the same. This section compares the "Top 15" foundational L1 networks, including 
+  Bitcoin, Ethereum, and Solana. It breaks down their differences in speed (TPS), security models, and "Total Value Locked" (TVL)—the metric that shows where the most business is actually happening.
   {{< /card >}}
 
 - {{< card >}}
   ### Smart contracts
-  There are multiple points to inject own styles and templates to make your documentation your own.
+  __Summary__: Smart contracts are self-executing programs that automatically move tokens when specific conditions are 
+  met, requiring no middleman or manual oversight. Examples include fantasy football pools and prediction markets like Polymarket, where code guarantees payouts based on real-world data.
   {{< /card >}}
   {{% /columns %}}
   {{% columns %}}
  {{< card >}}
 ### Exchanges, Pools and Liquidity
-  There are multiple points to inject own styles and templates to make your documentation your own.
+__Summary__: Learn how money is made in DeFi through liquidity provision. Unlike traditional finance where only big 
+banks provide liquidity, DeFi allows anyone to "farm" pools by locking their tokens to facilitate trades in exchange for a portion of the transaction fees.
   {{< /card >}}
   {{% /columns %}}
 
