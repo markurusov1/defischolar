@@ -34,8 +34,13 @@ Install the following software (order recommended):
      # Hugo Static Site Generator vX.Y.Z-XXXXXXX+extended ...
      ```
 
-5) Optional: IDE/Editor
-   - IntelliJ IDEA / VS Code / GoLand — any editor you prefer. Markdown preview support is helpful.
+5) IDE
+   - IntelliJ: https://www.jetbrains.com/idea/download/?section=windows
+   - Plugins: 
+     - Go (https://plugins.jetbrains.com/plugin/9568-go)
+     - PowerShell (https://plugins.jetbrains.com/plugin/14206-powershell)
+     - Junie (https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains)
+     - Copilot (https://plugins.jetbrains.com/plugin/17718-github-copilot--your-ai-pair-programmer)
 
 ## Clone the repository
 

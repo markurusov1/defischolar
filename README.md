@@ -11,6 +11,7 @@ Live site
 - Hugo (extended) v0.111+ recommended. Download: https://gohugo.io/installation/
 - Go 1.20+ (required for Hugo Modules, used to fetch the theme)
 - Git
+- [Detailed installation instructions](/setup/installation.md)
 
 ## Getting started
 
