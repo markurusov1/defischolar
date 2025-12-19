@@ -1,2 +1,5 @@
 {{ $script := resources.Get "js/theme-toggle-logic.js" | js.Build }}
 <script src="{{ $script.Permalink }}" defer></script>
+<!-- Load lucide (icons) from CDN and initialize to replace data-lucide elements with SVGs -->
+<script src="https://unpkg.com/lucide@0.257.0/dist/lucide.min.js" defer></script>
+<script defer>document.addEventListener('DOMContentLoaded', function(){ if (window.lucide && lucide.replace) { lucide.replace(); } });</script>

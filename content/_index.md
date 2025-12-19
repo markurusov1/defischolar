@@ -6,7 +6,7 @@ layout: landing
 <div class="book-hero">
 
 # DeFi Scholar {anchor=false}
-Decentralized Finance by a high schooler for high schoolers
+Decentralized Finance study and research notes
 
 {{<button href="/docs/start">}}Let's get started!{{</button>}}
 </div>

@@ -1,3 +1,4 @@
+"use strict";
 (() => {
   // <stdin>
   window.toggleTheme = function() {

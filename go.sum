@@ -1,2 +1,10 @@
 github.com/alex-shpak/hugo-book v0.0.0-20251118074854-b7f9c8cb0f51 h1:HHxBwO6r6h3AUflUc/X/Gf5UrfTY5rZEbD7QoGzbVvU=
 github.com/alex-shpak/hugo-book v0.0.0-20251118074854-b7f9c8cb0f51/go.mod h1:L4NMyzbn15fpLIpmmtDg9ZFFyTZzw87/lk7M2bMQ7ds=
+github.com/hugomods/icons v0.6.6 h1:gGlafcBDRP7sSID+tgLcWdog+s/QBj8DIfU+h9tZj1U=
+github.com/hugomods/icons v0.6.6/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
+github.com/hugomods/icons/vendors/bootstrap v0.5.11 h1:8gZnk0wR1JSC+07L7T1okJiGAva7V1rGnOIQYSsr4/8=
+github.com/hugomods/icons/vendors/bootstrap v0.5.11/go.mod h1:PAN+bzB4MW4dkA2gZbmKRJQ6lskHzoosqZzlCTgPv0k=
+github.com/hugomods/icons/vendors/lucide v0.3.41 h1:FspNf+MavHTs0JjUpibI+QN7P+td3PUGJOoAIDaZCJQ=
+github.com/hugomods/icons/vendors/lucide v0.3.41/go.mod h1:WY0xNPiXRtI+iR6m8kblAwp3vntgVc6XkFzECxDdGIg=
+github.com/hugomods/lucide-icons v0.515.0 h1:Wu5kHtLW58YYQ3cmed8Jf5/1iaKjzr6HVW0i60MSr2M=
+github.com/hugomods/lucide-icons v0.515.0/go.mod h1:7loUmJrnD5umJ2sWSCb3AffZt0fYnSc1I+yBRjgHgw8=
