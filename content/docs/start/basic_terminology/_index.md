@@ -2,9 +2,8 @@
 weight: 2
 title: "Basic Terminology"
 ---
-
-
-## Networks {{< icons/icon vendor=lucide name=network >}} 
+{{< icons/icon vendor=lucide name=network size="30">}}
+## Networks 
 {{% hint success %}} 
 - A lot of material is going to be about networks
 - In the blockchain/de-fi world a network is either a bunch of computers – proper servers, but also phones and
@@ -12,7 +11,9 @@ title: "Basic Terminology"
 - These people or computers are referred to as “nodes”
   {{% /hint %}}
 
-## Blockchain {{< icons/icon vendor=lucide name=link-2 >}}
+
+{{< icons/icon vendor=lucide name=link-2 size="30">}}
+## Blockchain 
 {{% hint info %}}
 - Blockchain is the name of technology - computer programs executing a bunch of well-known algorithms 
 - Bitcoin, Ethereum, Solana are different networks that use Blockchain 
@@ -22,14 +23,16 @@ things are tokens
 “cryptocurrency” or just “crypto”
 {{% /hint %}}
 
-## P2P (peer to peer) and “De” in DeFi {{< icons/icon vendor=lucide name=arrow-left-right >}}
+{{< icons/icon vendor=lucide name=arrow-left-right size="30">}}
+## P2P (peer to peer) and “De” in DeFi 
 {{% hint success %}}
 - Blockchain is a peer-to-peer network; all peers are equals – they have the same rights on the network 
 - No central authority = DEcentralized network 
 - This is where the “De” in De-Fi coming from
 {{% /hint %}}
 
-## The "FI" in DeFi {{< icons/icon vendor=lucide name=bitcoin >}}
+{{< icons/icon vendor=lucide name=bitcoin size="30">}}
+## The "FI" in DeFi 
 {{% hint info %}}
 - The networks we just mentioned allow people to create apps that use tokens to do “proper” finance activities – running exchanges, trading, lending, earning fees and such – hence “Fi” in De-Fi
 - So you now have a decentralized network of equal peers 
