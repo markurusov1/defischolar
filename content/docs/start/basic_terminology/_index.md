@@ -61,4 +61,11 @@ things are tokens
 * Exchange just made $4 and kept its 77 pounds
 * Stock exchanges and all other exchanges work the same way
 ````
-
+## Liquidity
+{{% hint success %}}
+- The airport currency exchange kiosks can trade many currencies 
+- This means they have enough actual paper cash for each currency  right there in the airport, so that they can meet the demand of travelers 
+- They probably reload daily 
+- Having enough stuff to trade is called liquidity 
+- In finance, the major banks are called the “sell side” because they sell liquidity, meaning they have (or can get) stuff for other Wall Street firms to trade
+  {{% /hint%}}

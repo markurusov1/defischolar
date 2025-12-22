@@ -1,6 +1,6 @@
 ---
-title: RWAs in DeFi
-weight: 22
+title: RWA - Real World Assets
+weight: 27
 ---
 
 # Real World Assets (RWAs) in DeFi: A Comprehensive Overview
@@ -59,10 +59,9 @@ Multiple mechanisms ensure one asset isn't tokenized multiple times across chain
 - **Public Registries**: Platforms like RWA.xyz list canonical tickers and chains.
 - **Bridging Controls**: Cross-chain versions use "lock-and-mint" (wrapped tokens), never creating new underlying supply.
 
-## Outlook
+## RWA – the positive feedback loop (or a flywheel effect) between traditional assets and on-chain liquidity.
 
-As of late 2025, RWA total value locked has grown significantly, attracting institutional interest. Advances in oracles, standards (e.g., ERC-3643), and regulation are accelerating adoption. RWAs are expected to bring trillions in traditional asset value on-chain, maturing DeFi with greater stability and real-world utility.
-
----
-
-*This page summarizes key concepts in Real World Assets within Decentralized Finance. For the latest developments, refer to protocols like Ondo Finance, Centrifuge, and resources such as RWA.xyz.*
+- As of late 2025, RWA total value locked has grown significantly, attracting institutional interest. Advances in 
+oracles, standards (e.g., ERC-3643), and regulation are speeding up adoption. RWAs are expected to bring trillions in traditional asset value on-chain, maturing DeFi with greater stability and real-world utility.
+- The RWA is key the future DeFI growth. The more of the real world economy is tokenized, the more DeFi economy will 
+  grow. The more DeFi economy grows, the more RWA will be in demand. 
