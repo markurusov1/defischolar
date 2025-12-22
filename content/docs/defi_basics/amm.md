@@ -1,5 +1,5 @@
 ---
-title: AMMs -  Automated Market Makers in DeFi
+title: Automated Market Makers
 weight: 21
 ---
 
