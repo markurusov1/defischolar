@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Overview# What is Uniswap?# Uniswap is a decentralized exchange (DEX) protocol that operates as an automated market maker (AMM) on the Ethereum blockchain and compatible networks, enabling users to swap cryptocurrencies directly in a permissionless, noncustodial manner without relying on centralized intermediaries like traditional exchanges At its core, Uniswap allows anyone to create liquidity pools for token pairs by depositing equal values of two assets, which traders can then use to execute swaps while liquidity providers (LPs) earn fees proportional to their share of the pool—typically ranging from 0.05% to 1% per trade, depending on the pool’s fee tier. This model democratizes market-making, provides on-chain price discovery, and supports features like concentrated liquidity (introduced in v3) for capital-efficient positioning within specific price ranges, as well as customizable “hooks” in v4 for advanced functionalities such as dynamic fees or on-chain auctions. Origins# The protocol originated in November 2018 when developer Hayden Adams, inspired by a blog post from Ethereum co-founder Vitalik Buterin on constant-function market makers, launched Uniswap v1 as a proof-of-concept with funding from an Ethereum Foundation grant. It quickly gained traction in the decentralized finance (DeFi) ecosystem, evolving through v2 (2020, adding ERC-20 token swaps) and v3 (2021, enhancing efficiency with concentrated liquidity and oracles) to v4 (launched in mid-2024, focusing on modularity and gas optimizations). By 2025, Uniswap remains the dominant DEX by trading volume, processing billions in daily trades and holding a significant share of DeFi liquidity, while its governance token UNI empowers community-driven decisions on protocol upgrades
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://markurusov1.github.io/defischolar_site/docs/uniswap/">
+  <meta property="og:site_name" content="DeFi Scholar">
+  <meta property="og:title" content="Uniswap">
+  <meta property="og:description" content="Overview# What is Uniswap?# Uniswap is a decentralized exchange (DEX) protocol that operates as an automated market maker (AMM) on the Ethereum blockchain and compatible networks, enabling users to swap cryptocurrencies directly in a permissionless, noncustodial manner without relying on centralized intermediaries like traditional exchanges At its core, Uniswap allows anyone to create liquidity pools for token pairs by depositing equal values of two assets, which traders can then use to execute swaps while liquidity providers (LPs) earn fees proportional to their share of the pool—typically ranging from 0.05% to 1% per trade, depending on the pool’s fee tier. This model democratizes market-making, provides on-chain price discovery, and supports features like concentrated liquidity (introduced in v3) for capital-efficient positioning within specific price ranges, as well as customizable “hooks” in v4 for advanced functionalities such as dynamic fees or on-chain auctions. Origins# The protocol originated in November 2018 when developer Hayden Adams, inspired by a blog post from Ethereum co-founder Vitalik Buterin on constant-function market makers, launched Uniswap v1 as a proof-of-concept with funding from an Ethereum Foundation grant. It quickly gained traction in the decentralized finance (DeFi) ecosystem, evolving through v2 (2020, adding ERC-20 token swaps) and v3 (2021, enhancing efficiency with concentrated liquidity and oracles) to v4 (launched in mid-2024, focusing on modularity and gas optimizations). By 2025, Uniswap remains the dominant DEX by trading volume, processing billions in daily trades and holding a significant share of DeFi liquidity, while its governance token UNI empowers community-driven decisions on protocol upgrades">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="Uniswap">
+  <meta itemprop="description" content="Overview# What is Uniswap?# Uniswap is a decentralized exchange (DEX) protocol that operates as an automated market maker (AMM) on the Ethereum blockchain and compatible networks, enabling users to swap cryptocurrencies directly in a permissionless, noncustodial manner without relying on centralized intermediaries like traditional exchanges At its core, Uniswap allows anyone to create liquidity pools for token pairs by depositing equal values of two assets, which traders can then use to execute swaps while liquidity providers (LPs) earn fees proportional to their share of the pool—typically ranging from 0.05% to 1% per trade, depending on the pool’s fee tier. This model democratizes market-making, provides on-chain price discovery, and supports features like concentrated liquidity (introduced in v3) for capital-efficient positioning within specific price ranges, as well as customizable “hooks” in v4 for advanced functionalities such as dynamic fees or on-chain auctions. Origins# The protocol originated in November 2018 when developer Hayden Adams, inspired by a blog post from Ethereum co-founder Vitalik Buterin on constant-function market makers, launched Uniswap v1 as a proof-of-concept with funding from an Ethereum Foundation grant. It quickly gained traction in the decentralized finance (DeFi) ecosystem, evolving through v2 (2020, adding ERC-20 token swaps) and v3 (2021, enhancing efficiency with concentrated liquidity and oracles) to v4 (launched in mid-2024, focusing on modularity and gas optimizations). By 2025, Uniswap remains the dominant DEX by trading volume, processing billions in daily trades and holding a significant share of DeFi liquidity, while its governance token UNI empowers community-driven decisions on protocol upgrades">
+  <meta itemprop="wordCount" content="356">
+
+<title>Uniswap | DeFi Scholar</title>
+<link rel="icon" href="https://markurusov1.github.io/defischolar_site/favicon.png" >
+<link rel="manifest" href="https://markurusov1.github.io/defischolar_site/manifest.json">
+<link rel="canonical" href="https://markurusov1.github.io/defischolar_site/docs/uniswap/">
+<link rel="stylesheet" href="https://markurusov1.github.io/defischolar_site/book.min.de560c44345cf0084702c0002756f29c4cb66637859c7c0fc5af45a9cc18ce3a.css" integrity="sha256-3lYMRDRc8AhHAsAAJ1bynEy2ZjeFnHwPxa9FqcwYzjo=" crossorigin="anonymous">
+
+
+  <script defer src="https://markurusov1.github.io/defischolar_site/fuse.min.js"></script>
+  <script defer src="https://markurusov1.github.io/defischolar_site/en.search.min.d002f139bd7d744fb1b4ce012fde296dec8efe702dfbc3dcaadf2f19a8c6a565.js" integrity="sha256-0ALxOb19dE&#43;xtM4BL94pbeyO/nAt&#43;8Pcqt8vGajGpWU=" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" href="https://markurusov1.github.io/defischolar_site/docs/uniswap/index.xml" title="DeFi Scholar" />
+
+  <style>
+     
+     
+     
+
+     
+    :root, [data-theme="light"] {
+         
+        --book-bg: #fff;
+        --book-text: #222;
+        --book-panel-bg: #f7f7f7;
+        --book-border: #eee;
+        --book-menu-color: #222;
+        --book-section-color: #000;
+        --book-hint-bg: #f9f9f9;
+        --book-code-bg: #f9f9f9;
+        --book-code-text: #222;
+    }
+
+     
+    :root body, [data-theme="light"] body {
+        background: var(--book-bg);
+        color: var(--book-text);
+    }
+
+     
+    [data-theme="dark"] {
+         
+        --book-bg: #1e1e1e;
+        --book-text: #eee;
+        --book-panel-bg: #333;
+        --book-border: #444;
+        --book-menu-color: #eee;
+        --book-section-color: #f7f7f7;
+        --book-hint-bg: #2d2d2d;
+        --book-code-bg: #2d2d2d;
+        --book-code-text: #eee;
+    }
+
+     
+    [data-theme="dark"] body {
+        background: var(--book-bg);
+        color: var(--book-text);
+    }
+
+     
+     
+     
+
+    #theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        margin-left: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+         
+        color: var(--book-text);
+        transition: color 0.2s;
+    }
+
+    #theme-toggle .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+     
+    [data-theme="light"] #theme-toggle .sun { display: none; }
+    [data-theme="light"] #theme-toggle .moon { display: block; }
+
+    [data-theme="dark"] #theme-toggle .sun { display: block; }
+    [data-theme="dark"] #theme-toggle .moon { display: none; }
+</style>
+</head>
+<body dir="ltr" class="book-kind-section book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://markurusov1.github.io/defischolar_site/"><span>DeFi Scholar</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-34773b1ae38cae61a3da621e3aedd638" class="toggle"  />
+    <label for="section-34773b1ae38cae61a3da621e3aedd638" class="flex">
+      <a href="https://markurusov1.github.io/defischolar_site/docs/start/" class="">
+        Introduction</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/start/basic_terminology/" class="">
+      Basic Terminology</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/currencies_and_trust/" class="">
+      Currencies</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c7834300e345c6af4fe8ba1614e68c62" class="toggle"  />
+    <label for="section-c7834300e345c6af4fe8ba1614e68c62" class="flex">
+      <a role="button" class="">
+        Blockchain</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/blockchain/intro_and_concepts/" class="">
+      Intro and Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/blockchain/miners_and_ledger/" class="">
+      Miners and Ledger</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/blockchain/sample_transaction/" class="">
+      Sample Transaction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1e173b399e39960c431a50680d8dfd31" class="toggle"  />
+    <label for="section-1e173b399e39960c431a50680d8dfd31" class="flex">
+      <a href="https://markurusov1.github.io/defischolar_site/docs/networks/" class="">
+        Blockchain Networks</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/networks/top15/" class="">
+      Top15</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/networks/the_big_three/" class="">
+      The Big Three</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/networks/network_browsers/" class="">
+      Network Browsers</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle"  />
+    <label for="section-a6f937de2aa2e353b067b93487b7739b" class="flex">
+      <a href="https://markurusov1.github.io/defischolar_site/docs/smart_contracts/" class="">
+        Smart Contracts</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/smart_contracts/polymarket/" class="">
+      Polymarket</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-10088853b33624006aabc13a97f706a4" class="toggle"  />
+    <label for="section-10088853b33624006aabc13a97f706a4" class="flex">
+      <a role="button" class="">
+        Defi Basics</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/pools_farming/" class="">
+      Liquidity pools and Yield Farming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/staking/" class="">
+      Staking</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/vaults/" class="">
+      Vaults</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/amm/" class="">
+      Automated Market Makers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/collateralized_lending/" class="">
+      Collateralized Lending</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/flash_loans/" class="">
+      Flash loans</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/rwa/" class="">
+      RWA - Real World Assets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0bec55acdb444c915e0bc07c6a020c5d" class="toggle" checked />
+    <label for="section-0bec55acdb444c915e0bc07c6a020c5d" class="flex">
+      <a href="https://markurusov1.github.io/defischolar_site/docs/uniswap/" class="active">
+        Uniswap</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://markurusov1.github.io/defischolar_site/docs/uniswap/impermanent_loss/" class="">
+      Impermanent Loss</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ad0f001a08f35aaae41256e1ef072b72" class="toggle"  />
+    <label for="section-ad0f001a08f35aaae41256e1ef072b72" class="flex">
+      <a href="https://markurusov1.github.io/defischolar_site/docs/research/" class="">
+        Research</a>
+      <img src="https://markurusov1.github.io/defischolar_site/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<nav role="menu" id="theme-button">
+    <button id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun icon feather feather-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon icon feather feather-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+</nav>
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://markurusov1.github.io/defischolar_site/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Uniswap</h3>
+
+  <label for="toc-control">
+    
+    <img src="https://markurusov1.github.io/defischolar_site/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#what-is-uniswap">What is Uniswap?</a></li>
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#competition">Competition</a></li>
+      </ul>
+    </li>
+    <li><a href="#reading-list">Reading list</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="overview">Overview<a class="anchor" href="#overview">#</a></h2>
+<h3 id="what-is-uniswap">What is Uniswap?<a class="anchor" href="#what-is-uniswap">#</a></h3>
+<ul>
+<li>Uniswap is a decentralized exchange (DEX) protocol that operates as an automated market maker (AMM) on the Ethereum
+blockchain and compatible networks, enabling users to swap cryptocurrencies directly in a permissionless,
+noncustodial manner without relying on centralized intermediaries like traditional exchanges</li>
+<li>At its core, Uniswap allows anyone to create liquidity pools for token pairs by depositing equal values of two assets,
+which traders can then use to execute swaps while liquidity providers (LPs) earn fees proportional to their share of
+the pool—typically ranging from 0.05% to 1% per trade, depending on the pool&rsquo;s fee tier.</li>
+<li>This model democratizes market-making, provides on-chain price discovery, and supports features like concentrated
+liquidity (introduced in v3) for capital-efficient positioning within specific price ranges, as well as
+customizable &ldquo;hooks&rdquo; in v4 for advanced functionalities such as dynamic fees or on-chain auctions.</li>
+</ul>
+<h3 id="origins">Origins<a class="anchor" href="#origins">#</a></h3>
+<p>The protocol originated in November 2018 when developer Hayden Adams, inspired by a blog post from Ethereum co-founder
+Vitalik Buterin on constant-function market makers, launched Uniswap v1 as a proof-of-concept with funding from an
+Ethereum Foundation grant. It quickly gained traction in the decentralized finance (DeFi) ecosystem, evolving through
+v2 (2020, adding ERC-20 token swaps) and v3 (2021, enhancing efficiency with concentrated liquidity and oracles) to
+v4 (launched in mid-2024, focusing on modularity and gas optimizations). By 2025, Uniswap remains the dominant DEX by
+trading volume, processing billions in daily trades and holding a significant share of DeFi liquidity, while its
+governance token UNI empowers community-driven decisions on protocol upgrades</p>
+<h3 id="competition">Competition<a class="anchor" href="#competition">#</a></h3>
+<ul>
+<li>Uniswap faces competition from other AMM-based DEXs that have forked or built upon its design, including SushiSwap
+(a community-driven fork emphasizing yield farming and governance rewards), Curve Finance (specialized in low-slippage
+stablecoin swaps), Balancer (supporting multi-asset weighted pools for portfolio management), PancakeSwap (a Binance
+Smart Chain alternative with lower fees and gaming elements), and aggregators like 1inch (which routes trades across
+multiple DEXs for optimal pricing).</li>
+<li>These rivals often differentiate through niche focuses, such as stable assets or cross-chain compatibility, but
+Uniswap&rsquo;s first-mover advantage, security track record, and ongoing innovations continue to solidify its leadership in
+the space.</li>
+</ul>
+<h2 id="reading-list">Reading list<a class="anchor" href="#reading-list">#</a></h2>
+<ul>
+<li><a href="https://uniswap.org/whitepaper-v3.pdf">V3 whitepaper</a></li>
+<li><a href="https://blog.uniswap.org/uniswap-v3">V3 blog</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="https://markurusov1.github.io/defischolar_site/docs/defi_basics/rwa/" class="flex align-center">
+        <img src="https://markurusov1.github.io/defischolar_site/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>RWA - Real World Assets</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="https://markurusov1.github.io/defischolar_site/docs/uniswap/impermanent_loss/" class="flex align-center">
+        <span>Impermanent Loss</span>
+        <img src="https://markurusov1.github.io/defischolar_site/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#what-is-uniswap">What is Uniswap?</a></li>
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#competition">Competition</a></li>
+      </ul>
+    </li>
+    <li><a href="#reading-list">Reading list</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+<script src="https://markurusov1.github.io/defischolar_site/js/theme-toggle-logic.js" defer></script>
+
+<script src="https://unpkg.com/lucide@0.257.0/dist/lucide.min.js" defer></script>
+<script defer>document.addEventListener('DOMContentLoaded', function(){ if (window.lucide && lucide.replace) { lucide.replace(); } });</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

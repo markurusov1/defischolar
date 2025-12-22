@@ -1,6 +1,6 @@
 ---
 title: Flash loans
-weight: 23
+weight: 26
 ---
 
 ### Summary of DeFi Flash Loans

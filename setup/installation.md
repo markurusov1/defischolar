@@ -4,6 +4,9 @@ This document describes how to install all prerequisites and run the DeFi Schola
 
 ## Prerequisites
 
+### Reading
+- Git basics: https://bytebytego.com/guides/how-does-git-work/
+
 Install the following software (order recommended):
 
 1) PowerShell 7+
@@ -19,7 +22,7 @@ Install the following software (order recommended):
    - Before the first commit, do this: 
    - git config --global user.email "urusov.mark@gmail.com"
    - git config --global user.name "markurusov1"
-   - then use token (having generated one) to login for the first push
+   - then use a Github token (having generated one) to log in for the first push
 
 3) Go 1.20+
    - Download: https://go.dev/dl/

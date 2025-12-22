@@ -1,3 +1,7 @@
+# Overview
+
+This file contains notes relevant to Hugo in general and the hugo-book theme specifically.
+
 ## bookFlatSection: true 
 
 bold menu item name and probably an ident
