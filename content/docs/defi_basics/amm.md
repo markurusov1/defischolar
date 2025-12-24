@@ -1,6 +1,6 @@
 ---
 title: Automated Market Makers
-weight: 21
+weight: 24
 ---
 
 # Deep Dive into Automated Market Makers (AMMs) in DeFi
