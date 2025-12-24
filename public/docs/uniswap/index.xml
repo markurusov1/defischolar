@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uniswap on DeFi Scholar</title>
-    <link>https://markurusov1.github.io/defischolar_site/docs/uniswap/</link>
+    <link>http://localhost:1313/defischolar_site/docs/uniswap/</link>
     <description>Recent content in Uniswap on DeFi Scholar</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://markurusov1.github.io/defischolar_site/docs/uniswap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/defischolar_site/docs/uniswap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Impermanent Loss</title>
-      <link>https://markurusov1.github.io/defischolar_site/docs/uniswap/impermanent_loss/</link>
+      <link>http://localhost:1313/defischolar_site/docs/uniswap/impermanent_loss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://markurusov1.github.io/defischolar_site/docs/uniswap/impermanent_loss/</guid>
+      <guid>http://localhost:1313/defischolar_site/docs/uniswap/impermanent_loss/</guid>
       <description>&lt;h2 id=&#34;impermanent-loss-in-uniswap-v3&#34;&gt;Impermanent Loss in Uniswap V3&lt;a class=&#34;anchor&#34; href=&#34;#impermanent-loss-in-uniswap-v3&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Impermanent loss (IL)&lt;/strong&gt; is the difference in value between:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Holding your tokens in your wallet, and&lt;/li&gt;&#xA;&lt;li&gt;Providing them as liquidity in a Uniswap V3 pool.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;It occurs when the price of the two tokens in the pool moves away from the price at which you deposited. The loss is&#xA;called “impermanent” because it only becomes real when you withdraw; if the price returns to the original level, the&#xA;loss disappears.&lt;/p&gt;</description>
     </item>
   </channel>
