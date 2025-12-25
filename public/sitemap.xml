@@ -36,9 +36,17 @@
   </url><url>
     <loc>http://localhost:1313/defischolar_site/docs/defi_basics/rwa/</loc>
   </url><url>
-    <loc>http://localhost:1313/defischolar_site/docs/uniswap/</loc>
+    <loc>http://localhost:1313/defischolar_site/docs/trading/</loc>
   </url><url>
     <loc>http://localhost:1313/defischolar_site/docs/uniswap/impermanent_loss/</loc>
+  </url><url>
+    <loc>http://localhost:1313/defischolar_site/docs/trading/l2-market-order/</loc>
+  </url><url>
+    <loc>http://localhost:1313/defischolar_site/docs/trading/margin-loans/</loc>
+  </url><url>
+    <loc>http://localhost:1313/defischolar_site/docs/trading/market-making/</loc>
+  </url><url>
+    <loc>http://localhost:1313/defischolar_site/docs/uniswap/</loc>
   </url><url>
     <loc>http://localhost:1313/defischolar_site/docs/research/</loc>
   </url><url>

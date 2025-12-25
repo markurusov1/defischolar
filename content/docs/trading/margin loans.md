@@ -1,7 +1,6 @@
 ---
-title: Margin Loans
-bookCollapseSection: true
-weight: 26
+Title: Margin Loans
+weight: 32
 ---
 
 ## Margin Loans

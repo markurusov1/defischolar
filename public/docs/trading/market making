@@ -1,7 +1,6 @@
 ---
 title: Market Making
-bookCollapseSection: true
-weight: 25
+weight: 33
 ---
 
 ## What is Market Making?

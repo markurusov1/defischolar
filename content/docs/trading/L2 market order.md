@@ -1,7 +1,6 @@
 ---
-title: L2 Order Book
-bookCollapseSection: true
-weight: 24
+Title: L2 Order Book
+weight: 31
 ---
 
 ## Layer 2 (L2) Networks
