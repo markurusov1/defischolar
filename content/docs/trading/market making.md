@@ -8,31 +8,31 @@ Market making is a crucial strategy in DeFi trading where participants provide l
 In contrast to traditional finance, DeFi market making is permissionless—anyone can participate by depositing assets into liquidity pools or order books, earning fees from trades that use their liquidity.
 
 ## Types of Market Making in DeFi
-
+{{% hint success %}}
 - **Passive (AMM-based):**
 Users deposit equal values of two assets into a liquidity pool (e.g., ETH/USDC). The pool automatically sets prices using a formula (e.g., constant product: x × y = k). Market makers earn a share of trading fees.
 - **Active (Order Book-based):**
 Traders place limit orders on both sides of the order book and adjust them dynamically based on market conditions. This requires more active management but can offer tighter spreads.
 - **Hybrid Approaches:**
 Some protocols combine AMM pools with order book features for better efficiency.
-
+  {{% /hint %}}
 ## How Market Makers Earn Profits
-
+{{% hint info %}}
 - **Bid-Ask Spread:** Profit from the difference between buy and sell prices.
 - **Trading Fees:** Earn a portion of fees from trades that use their liquidity.
 - **Incentives:** Many DeFi platforms offer token rewards for liquidity provision.
-
+  {{% /hint %}}
 ## Risks
-
+{{% hint danger %}}
 - **Impermanent Loss (IL):** In AMM pools, price changes can cause losses compared to simply holding the assets.
 - **Inventory Risk:** Holding unbalanced positions during volatile markets.
 - **Adverse Selection:**  Being "picked off" by informed traders.
-
+  {{% /hint %}}
 ## Best Practices
-
+{{% hint success %}}
 - Use hedging strategies to mitigate IL.
 - Monitor market conditions and rebalance positions.
 - Diversify across multiple pools or pairs.
 - Start with low-risk, high-volume pairs.
-
+  {{% /hint %}}
 Market making is essential for deep liquidity and efficient price discovery in DeFi markets.
