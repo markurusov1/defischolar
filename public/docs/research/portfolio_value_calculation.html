@@ -8,25 +8,30 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts# ">
+<meta name="description" content="Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation# Portfolio margin is a sophisticated margining system used primarily in derivatives trading. It differs from simpler margin types (like Regulation T margin in TradFi or fixed LTV in basic DeFi lending) by focusing on the overall risk of the entire portfolio rather than isolated positions or just the current market value.
+Below is how collateral value is determined in both TradFi (Traditional Finance) and DeFi (Decentralized Finance). This is based on standard practices and emerging implementations.
+">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/smart_contracts/index.html">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/research/portfolio_value_calculation.html">
   <meta property="og:site_name" content="DeFi Scholar">
-  <meta property="og:title" content="Smart Contracts">
-  <meta property="og:description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
+  <meta property="og:title" content="DeFi Scholar">
+  <meta property="og:description" content="Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation# Portfolio margin is a sophisticated margining system used primarily in derivatives trading. It differs from simpler margin types (like Regulation T margin in TradFi or fixed LTV in basic DeFi lending) by focusing on the overall risk of the entire portfolio rather than isolated positions or just the current market value.
+Below is how collateral value is determined in both TradFi (Traditional Finance) and DeFi (Decentralized Finance). This is based on standard practices and emerging implementations.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
 
 
-  <meta itemprop="name" content="Smart Contracts">
-  <meta itemprop="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
-  <meta itemprop="wordCount" content="215">
+  <meta itemprop="name" content="DeFi Scholar">
+  <meta itemprop="description" content="Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation# Portfolio margin is a sophisticated margining system used primarily in derivatives trading. It differs from simpler margin types (like Regulation T margin in TradFi or fixed LTV in basic DeFi lending) by focusing on the overall risk of the entire portfolio rather than isolated positions or just the current market value.
+Below is how collateral value is determined in both TradFi (Traditional Finance) and DeFi (Decentralized Finance). This is based on standard practices and emerging implementations.">
+  <meta itemprop="wordCount" content="621">
 
-<title>Smart Contracts | DeFi Scholar</title>
+<title>Portfolio Value Calculation | DeFi Scholar</title>
 <link rel="icon" href="../../favicon.png" >
 <link rel="manifest" href="../../manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/smart_contracts/index.html">
+<link rel="canonical" href="http://localhost:1313/docs/research/portfolio_value_calculation.html">
 <link rel="stylesheet" href="../../book.min.de560c44345cf0084702c0002756f29c4cb66637859c7c0fc5af45a9cc18ce3a.css" integrity="sha256-3lYMRDRc8AhHAsAAJ1bynEy2ZjeFnHwPxa9FqcwYzjo=" crossorigin="anonymous">
 
 
@@ -34,7 +39,6 @@ https://github.com/alex-shpak/hugo-book
   <script defer src="../../en.search.min.14dfbf4a41b5b534a453ebde5d664647cee1179991b997f6775fbb891af5b201.js" integrity="sha256-FN&#43;/SkG1tTSkU&#43;veXWZGR87hF5mRuZf2d1&#43;7iRr1sgE=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/smart_contracts/index.xml" title="DeFi Scholar" />
 
   <style>
      
@@ -114,7 +118,7 @@ https://github.com/alex-shpak/hugo-book
     [data-theme="dark"] #theme-toggle .moon { display: none; }
 </style>
 </head>
-<body dir="ltr" class="book-kind-section book-type-docs">
+<body dir="ltr" class="book-kind-page book-type-docs">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
@@ -366,9 +370,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle" checked />
+    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle"  />
     <label for="section-a6f937de2aa2e353b067b93487b7739b" class="flex">
-      <a href="../../docs/smart_contracts/index.html" class="active">
+      <a href="../../docs/smart_contracts/index.html" class="">
         Smart Contracts</a>
       <img src="../../icons/chevron-right.svg" class="book-icon" alt="Expand" />
     </label>
@@ -668,7 +672,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-ad0f001a08f35aaae41256e1ef072b72" class="toggle"  />
+    <input type="checkbox" id="section-ad0f001a08f35aaae41256e1ef072b72" class="toggle" checked />
     <label for="section-ad0f001a08f35aaae41256e1ef072b72" class="flex">
       <a role="button" class="">
         Research</a>
@@ -700,7 +704,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../docs/research/portfolio_value_calculation.html" class="">
+    <a href="../../docs/research/portfolio_value_calculation.html" class="active">
       Portfolio Value Calculation</a>
   
 
@@ -752,7 +756,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="../../icons/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Smart Contracts</h3>
+  <h3>Portfolio Value Calculation</h3>
 
   <label for="toc-control">
     
@@ -768,10 +772,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
+    <li><a href="#portfolio-margin-in-tradfi-and-defi-calculation-and-collateral-valuation">Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation</a>
       <ul>
-        <li></li>
+        <li><a href="#key-concept-not-just-current-market-value">Key Concept: Not Just Current Market Value</a></li>
+        <li><a href="#how-collateral-value-is-calculated">How Collateral Value Is Calculated</a></li>
       </ul>
     </li>
   </ul>
@@ -786,44 +790,60 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="what-are-smart-contracts">What are smart contracts?<a class="anchor" href="#what-are-smart-contracts">#</a></h2>
-<blockquote class="book-hint info">
+  <article class="markdown book-article"><h2 id="portfolio-margin-in-tradfi-and-defi-calculation-and-collateral-valuation">Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation<a class="anchor" href="#portfolio-margin-in-tradfi-and-defi-calculation-and-collateral-valuation">#</a></h2>
+<p>Portfolio margin is a sophisticated margining system used primarily in derivatives trading. It differs from simpler margin types (like Regulation T margin in TradFi or fixed LTV in basic DeFi lending) by focusing on the overall <strong>risk of the entire portfolio</strong> rather than isolated positions or just the current market value.</p>
+<p>Below is how collateral value is determined in both TradFi (Traditional Finance) and DeFi (Decentralized Finance).
+This is based on standard practices and emerging implementations.</p>
+<h3 id="key-concept-not-just-current-market-value">Key Concept: Not Just Current Market Value<a class="anchor" href="#key-concept-not-just-current-market-value">#</a></h3>
 <ul>
-<li>Smart contracts are programs (code) that run on the blockchain networks</li>
-<li>Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025.</li>
-<li>Smart contracts execute logic that moves tokens between wallets</li>
-<li>The execution is automated. Once the contract is started, there’s no stopping or changing it</li>
-<li>Anyone can create and deploy smart contracts</li>
-<li>An easy example would be creating a pool for a fantasy football league</li>
+<li><strong>Is it calculated against the current market value?</strong> No. Portfolio margin uses <strong>risk-based models</strong> that simulate potential future losses under various market scenarios. While current prices are a starting point (via real-time data or oracles), the calculation incorporates stress tests, correlations between assets, volatilities, and offsets (e.g., hedges that reduce net risk). This allows for higher leverage (e.g., 5-15x in TradFi) but with dynamic adjustments to prevent excessive risk.</li>
+<li><strong>Why not current value alone?</strong> The current market value ignores portfolio diversification, hedging, and extreme events (e.g., market crashes). Risk models provide a more accurate &ldquo;effective&rdquo; value, often leading to lower margin requirements for well-hedged portfolios.</li>
 </ul>
-</blockquote>
-<h2 id="fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts<a class="anchor" href="#fantasy-league-pool--payouts-via-smart-contracts">#</a></h2>
-<p><img src="../../images/smart_contract_pool.jpg" alt="Fantasy League Pool" title="Pool Example"/></p>
-<blockquote class="book-hint info">
-<h4 id="pool-creation"><strong>Pool Creation</strong><a class="anchor" href="#pool-creation">#</a></h4>
-<ul>
-<li>Smart contract is <strong>deployed</strong> with rules: entry fee (e.g., 0.01 ETH), max players, deadline, payout structure (1st:
-50%, 2nd: 30%, 3rd: 20%)</li>
-<li>Contract <strong>accepts deposits</strong> — each player sends crypto to the <strong>contract address</strong> (not a person)</li>
-</ul>
-<h4 id="entry--commitment"><strong>Entry &amp; Commitment</strong><a class="anchor" href="#entry--commitment">#</a></h4>
-<ul>
-<li>Players <strong>submit team rosters</strong></li>
-<li>Contract <strong>locks funds</strong> until league ends — no refunds after deadline (enforced by code)</li>
-</ul>
-<h4 id="score-tracking-oracle-integration"><strong>Score Tracking (Oracle Integration)</strong><a class="anchor" href="#score-tracking-oracle-integration">#</a></h4>
-<ul>
-<li>Smart contract pulls <strong>real player</strong> stats from a trusted Oracle (e.g., Chainlink)</li>
-<li>Oracle is a <strong>third party</strong> that provides data to smart contracts</li>
-</ul>
-<h4 id="automatic-payouts"><strong>Automatic Payouts</strong><a class="anchor" href="#automatic-payouts">#</a></h4>
-<ul>
-<li>At league end, distributePrizes() triggers: first place → 50% of pool, second → 30%, third → 20%</li>
-<li>Funds sent <strong>directly to winners’ wallets — no manual payout, no trust needed</strong> – this is where the automatic
-execution
-of a smart contract guarantees contract enforcement</li>
-</ul>
-</blockquote>
+<h3 id="how-collateral-value-is-calculated">How Collateral Value Is Calculated<a class="anchor" href="#how-collateral-value-is-calculated">#</a></h3>
+<p>Collateral value in portfolio margin is assessed as a <strong>risk-adjusted net value</strong>, not nominal current value. It involves:</p>
+<ol>
+<li><strong>Netting Positions</strong>: Long and short positions are offset against each other (e.g., a long call and short put might cancel out some risk).</li>
+<li><strong>Risk Arrays/Stress Tests</strong>: Simulate price moves (e.g., ±10-30% shocks) across the portfolio to estimate worst-case losses.</li>
+<li><strong>Value at Risk (VaR) or Similar Metrics</strong>: Calculate potential losses at a confidence level (e.g., 99% VaR over 1-2 days).</li>
+<li><strong>Dynamic Updates</strong>: Recalculated frequently (seconds to minutes in TradFi; block-by-block in DeFi).</li>
+<li><strong>Loan-to-Value (LTV) or Margin Requirement</strong>: The borrowable amount is derived from this risk-adjusted value, often 70-90% LTV for low-risk portfolios.</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>TradFi (e.g., via brokers like Interactive Brokers, Charles Schwab)</th>
+          <th>DeFi (Emerging Protocols, e.g., Hyperliquid, Kyan, Delta Exchange)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Basis of Calculation</strong></td>
+          <td>Risk-based: Uses models like TIMS (Theoretical Intermarket Margin System) or proprietary algorithms. Simulates market moves (e.g., divide price range into 10 points, calculate P&amp;L at each). Accounts for correlations, Greeks (delta, gamma for options), and stress scenarios (e.g., 2008 crash analogs).</td>
+          <td>Risk-based: Similar to TradFi, but on-chain. Uses oracles (e.g., Chainlink) for prices, then applies VaR-like models or LTV ratios (0-1) based on portfolio risk. Simulates shocks and offsets; dynamic, but constrained by blockchain (e.g., gas costs).</td>
+      </tr>
+      <tr>
+          <td><strong>Collateral Valuation Example</strong></td>
+          <td>If your portfolio has $100K in stocks + hedging options, current value might be $100K, but risk model shows max loss of $20K under stress → effective collateral value ~$80K (after offsets). Margin requirement: 15-30% of notional, allowing higher borrow.</td>
+          <td>For a DeFi LP position (e.g., Uniswap v3 NFT as collateral), current value might be $10K, but IL stress test shows $3K potential loss → effective value $7K. LTV adjusts dynamically (e.g., 80% borrow if low risk). Not standard in all DeFi (e.g., Aave uses simpler cross-margin), but growing in derivatives DEXs.</td>
+      </tr>
+      <tr>
+          <td><strong>Advantages Over Current Value</strong></td>
+          <td>Higher efficiency: Well-hedged portfolios need less margin (e.g., 6:1 leverage vs. 2:1 in Reg T). Reduces unnecessary liquidations.</td>
+          <td>Capital efficiency: Allows 5-10x leverage on LP positions without fixed LTV traps. Addresses impermanent loss (IL) via simulations, as proposed in your attached documents.</td>
+      </tr>
+      <tr>
+          <td><strong>Limitations</strong></td>
+          <td>Requires approval (e.g., $100K+ account, experience). Can lead to higher risk if models fail (e.g., in black swan events).</td>
+          <td>Still nascent; relies on oracles (vulnerable to manipulation). Higher complexity/gas fees. Not widespread (e.g., absent in basic lending like Compound).</td>
+      </tr>
+      <tr>
+          <td><strong>Eligibility</strong></td>
+          <td>For experienced traders with derivatives-heavy accounts (e.g., options, futures). Regulated by FINRA/SEC.</td>
+          <td>Varies by protocol; often for perp DEXs or advanced lending. No KYC, but smart contract risks apply.</td>
+      </tr>
+  </tbody>
+</table>
 </article>
  
       
@@ -852,18 +872,13 @@ of a smart contract guarantees contract enforcement</li>
   <div class="flex flex-wrap justify-between">
     <span>
     
-      <a href="../../docs/networks/offchains.html" class="flex align-center">
+      <a href="../../docs/research/benefits.html" class="flex align-center">
         <img src="../../icons/backward.svg" class="book-icon" alt="Backward" />
-        <span>Offchains</span>
+        <span>Benefits</span>
       </a>
     
     </span>
     <span>
-    
-      <a href="../../docs/smart_contracts/polymarket.html" class="flex align-center">
-        <span>Polymarket</span>
-        <img src="../../icons/forward.svg" class="book-icon" alt="Forward" />
-      </a>
     
     </span>
   </div>
@@ -901,10 +916,10 @@ of a smart contract guarantees contract enforcement</li>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
+    <li><a href="#portfolio-margin-in-tradfi-and-defi-calculation-and-collateral-valuation">Portfolio Margin in TradFi and DeFi: Calculation and Collateral Valuation</a>
       <ul>
-        <li></li>
+        <li><a href="#key-concept-not-just-current-market-value">Key Concept: Not Just Current Market Value</a></li>
+        <li><a href="#how-collateral-value-is-calculated">How Collateral Value Is Calculated</a></li>
       </ul>
     </li>
   </ul>

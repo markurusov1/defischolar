@@ -8,8 +8,8 @@ languageCode = 'en-us'
 title = 'DeFi Scholar'
 
 canonifyURLs = true
-#relativeURLs = true
-#uglyURLs = true
+relativeURLs = true
+uglyURLs = true
 
 [module]
 [[module.imports]]

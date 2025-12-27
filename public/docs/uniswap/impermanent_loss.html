@@ -8,25 +8,30 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts# ">
+<meta name="description" content="Impermanent Loss in Uniswap V3# Impermanent loss (IL) is the difference in value between:
+Holding your tokens in your wallet, and Providing them as liquidity in a Uniswap V3 pool. It occurs when the price of the two tokens in the pool moves away from the price at which you deposited. The loss is called “impermanent” because it only becomes real when you withdraw; if the price returns to the original level, the loss disappears.
+">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/smart_contracts/index.html">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/uniswap/impermanent_loss.html">
   <meta property="og:site_name" content="DeFi Scholar">
-  <meta property="og:title" content="Smart Contracts">
-  <meta property="og:description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
+  <meta property="og:title" content="Impermanent Loss">
+  <meta property="og:description" content="Impermanent Loss in Uniswap V3# Impermanent loss (IL) is the difference in value between:
+Holding your tokens in your wallet, and Providing them as liquidity in a Uniswap V3 pool. It occurs when the price of the two tokens in the pool moves away from the price at which you deposited. The loss is called “impermanent” because it only becomes real when you withdraw; if the price returns to the original level, the loss disappears.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
 
 
-  <meta itemprop="name" content="Smart Contracts">
-  <meta itemprop="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
-  <meta itemprop="wordCount" content="215">
+  <meta itemprop="name" content="Impermanent Loss">
+  <meta itemprop="description" content="Impermanent Loss in Uniswap V3# Impermanent loss (IL) is the difference in value between:
+Holding your tokens in your wallet, and Providing them as liquidity in a Uniswap V3 pool. It occurs when the price of the two tokens in the pool moves away from the price at which you deposited. The loss is called “impermanent” because it only becomes real when you withdraw; if the price returns to the original level, the loss disappears.">
+  <meta itemprop="wordCount" content="492">
 
-<title>Smart Contracts | DeFi Scholar</title>
+<title>Impermanent Loss | DeFi Scholar</title>
 <link rel="icon" href="../../favicon.png" >
 <link rel="manifest" href="../../manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/smart_contracts/index.html">
+<link rel="canonical" href="http://localhost:1313/docs/uniswap/impermanent_loss.html">
 <link rel="stylesheet" href="../../book.min.de560c44345cf0084702c0002756f29c4cb66637859c7c0fc5af45a9cc18ce3a.css" integrity="sha256-3lYMRDRc8AhHAsAAJ1bynEy2ZjeFnHwPxa9FqcwYzjo=" crossorigin="anonymous">
 
 
@@ -34,7 +39,6 @@ https://github.com/alex-shpak/hugo-book
   <script defer src="../../en.search.min.14dfbf4a41b5b534a453ebde5d664647cee1179991b997f6775fbb891af5b201.js" integrity="sha256-FN&#43;/SkG1tTSkU&#43;veXWZGR87hF5mRuZf2d1&#43;7iRr1sgE=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/smart_contracts/index.xml" title="DeFi Scholar" />
 
   <style>
      
@@ -114,7 +118,7 @@ https://github.com/alex-shpak/hugo-book
     [data-theme="dark"] #theme-toggle .moon { display: none; }
 </style>
 </head>
-<body dir="ltr" class="book-kind-section book-type-docs">
+<body dir="ltr" class="book-kind-page book-type-docs">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
@@ -366,9 +370,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle" checked />
+    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle"  />
     <label for="section-a6f937de2aa2e353b067b93487b7739b" class="flex">
-      <a href="../../docs/smart_contracts/index.html" class="active">
+      <a href="../../docs/smart_contracts/index.html" class="">
         Smart Contracts</a>
       <img src="../../icons/chevron-right.svg" class="book-icon" alt="Expand" />
     </label>
@@ -589,7 +593,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0bec55acdb444c915e0bc07c6a020c5d" class="toggle"  />
+    <input type="checkbox" id="section-0bec55acdb444c915e0bc07c6a020c5d" class="toggle" checked />
     <label for="section-0bec55acdb444c915e0bc07c6a020c5d" class="flex">
       <a href="../../docs/uniswap/index.html" class="">
         Uniswap</a>
@@ -621,7 +625,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../docs/uniswap/impermanent_loss.html" class="">
+    <a href="../../docs/uniswap/impermanent_loss.html" class="active">
       Impermanent Loss</a>
   
 
@@ -752,7 +756,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="../../icons/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Smart Contracts</h3>
+  <h3>Impermanent Loss</h3>
 
   <label for="toc-control">
     
@@ -768,12 +772,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
+    <li><a href="#impermanent-loss-in-uniswap-v3">Impermanent Loss in Uniswap V3</a>
       <ul>
-        <li></li>
+        <li><a href="#simple-example-ethusdc-pool">Simple Example (ETH/USDC pool)</a></li>
+        <li><a href="#why-uniswap-v3-is-different">Why Uniswap V3 is different</a></li>
+        <li><a href="#core-mechanism-remains-the-same">Core Mechanism Remains the Same</a></li>
       </ul>
     </li>
+    <li><a href="#key-differences-in-v4">Key Differences in V4</a></li>
   </ul>
 </nav>
 
@@ -786,44 +792,90 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="what-are-smart-contracts">What are smart contracts?<a class="anchor" href="#what-are-smart-contracts">#</a></h2>
-<blockquote class="book-hint info">
+  <article class="markdown book-article"><h2 id="impermanent-loss-in-uniswap-v3">Impermanent Loss in Uniswap V3<a class="anchor" href="#impermanent-loss-in-uniswap-v3">#</a></h2>
+<p><strong>Impermanent loss (IL)</strong> is the difference in value between:</p>
+<ol>
+<li>Holding your tokens in your wallet, and</li>
+<li>Providing them as liquidity in a Uniswap V3 pool.</li>
+</ol>
+<p>It occurs when the price of the two tokens in the pool moves away from the price at which you deposited. The loss is
+called “impermanent” because it only becomes real when you withdraw; if the price returns to the original level, the
+loss disappears.</p>
+<h3 id="simple-example-ethusdc-pool">Simple Example (ETH/USDC pool)<a class="anchor" href="#simple-example-ethusdc-pool">#</a></h3>
 <ul>
-<li>Smart contracts are programs (code) that run on the blockchain networks</li>
-<li>Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025.</li>
-<li>Smart contracts execute logic that moves tokens between wallets</li>
-<li>The execution is automated. Once the contract is started, there’s no stopping or changing it</li>
-<li>Anyone can create and deploy smart contracts</li>
-<li>An easy example would be creating a pool for a fantasy football league</li>
+<li>Current price: 1 ETH = $2,000</li>
+<li>You deposit $10,000 total: 2.5 ETH + $5,000 USDC (50/50 value) into a Uniswap V3 position.</li>
 </ul>
-</blockquote>
-<h2 id="fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts<a class="anchor" href="#fantasy-league-pool--payouts-via-smart-contracts">#</a></h2>
-<p><img src="../../images/smart_contract_pool.jpg" alt="Fantasy League Pool" title="Pool Example"/></p>
-<blockquote class="book-hint info">
-<h4 id="pool-creation"><strong>Pool Creation</strong><a class="anchor" href="#pool-creation">#</a></h4>
+<p><strong>Two scenarios after some time:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Scenario</th>
+          <th>Price of ETH</th>
+          <th>If you had just HODLed (kept tokens)</th>
+          <th>Value of your LP position when withdrawn</th>
+          <th>Impermanent Loss</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Price stays the same</td>
+          <td>$2,000</td>
+          <td>$10,000</td>
+          <td>$10,000</td>
+          <td>$0</td>
+      </tr>
+      <tr>
+          <td>Price rises to $4,000 (ETH 2×)</td>
+          <td>$4,000</td>
+          <td>2.5 ETH × $4,000 + $5,000 = <strong>$15,000</strong></td>
+          <td>≈ <strong>$13,416</strong></td>
+          <td>≈ <strong>$1,584</strong> loss</td>
+      </tr>
+      <tr>
+          <td>Price falls to $1,000 (ETH 0.5×)</td>
+          <td>$1,000</td>
+          <td>2.5 ETH × $1,000 + $5,000 = <strong>$7,500</strong></td>
+          <td>≈ <strong>$6,881</strong></td>
+          <td>≈ <strong>$619</strong> loss</td>
+      </tr>
+  </tbody>
+</table>
+<p>In both cases where price moved, your LP position is worth less than simply holding the original tokens would have been.</p>
+<h3 id="why-uniswap-v3-is-different">Why Uniswap V3 is different<a class="anchor" href="#why-uniswap-v3-is-different">#</a></h3>
 <ul>
-<li>Smart contract is <strong>deployed</strong> with rules: entry fee (e.g., 0.01 ETH), max players, deadline, payout structure (1st:
-50%, 2nd: 30%, 3rd: 20%)</li>
-<li>Contract <strong>accepts deposits</strong> — each player sends crypto to the <strong>contract address</strong> (not a person)</li>
+<li>In V3 you choose a specific price range (e.g., $1,800–$2,200).</li>
+<li>If the market price leaves your range, your position becomes 100% one token (usually the stablecoin when price rises,
+or the volatile token when the price falls).</li>
+<li>Narrow ranges = higher fees when the price stays inside, but much higher IL when price moves out.</li>
 </ul>
-<h4 id="entry--commitment"><strong>Entry &amp; Commitment</strong><a class="anchor" href="#entry--commitment">#</a></h4>
+<p><strong>Bottom line:</strong><br>
+Impermanent loss is the cost of earning trading fees. The more the price moves (and the narrower your range), the larger
+the potential IL. Fees collected can offset or exceed the loss in low-volatility or high-volume pools, but in highly
+volatile conditions IL often dominates.</p>
+<p>Yes, the summary largely holds for <strong>Uniswap V4</strong>, with some nuances.</p>
+<h3 id="core-mechanism-remains-the-same">Core Mechanism Remains the Same<a class="anchor" href="#core-mechanism-remains-the-same">#</a></h3>
 <ul>
-<li>Players <strong>submit team rosters</strong></li>
-<li>Contract <strong>locks funds</strong> until league ends — no refunds after deadline (enforced by code)</li>
+<li><strong>Uniswap V4</strong> retains the same concentrated liquidity model as V3. Liquidity providers select specific price ranges,
+and impermanent loss (IL) arises from the same source: price divergence causing the pool to rebalance tokens,
+resulting in a position worth less than simply holding the deposited tokens.</li>
+<li>The example in the summary (e.g., value loss when ETH price rises or falls) applies identically to standard V4 pools.</li>
+<li>If the price leaves your chosen range, the position shifts to 100% one token, amplifying potential IL in narrow
+ranges—just like in V3.</li>
 </ul>
-<h4 id="score-tracking-oracle-integration"><strong>Score Tracking (Oracle Integration)</strong><a class="anchor" href="#score-tracking-oracle-integration">#</a></h4>
+<h2 id="key-differences-in-v4">Key Differences in V4<a class="anchor" href="#key-differences-in-v4">#</a></h2>
 <ul>
-<li>Smart contract pulls <strong>real player</strong> stats from a trusted Oracle (e.g., Chainlink)</li>
-<li>Oracle is a <strong>third party</strong> that provides data to smart contracts</li>
-</ul>
-<h4 id="automatic-payouts"><strong>Automatic Payouts</strong><a class="anchor" href="#automatic-payouts">#</a></h4>
+<li><strong>Hooks</strong> (customizable plugins) allow pool creators to add logic that can <strong>mitigate or hedge IL</strong>, such as:
 <ul>
-<li>At league end, distributePrizes() triggers: first place → 50% of pool, second → 30%, third → 20%</li>
-<li>Funds sent <strong>directly to winners’ wallets — no manual payout, no trust needed</strong> – this is where the automatic
-execution
-of a smart contract guarantees contract enforcement</li>
+<li>Dynamic fees that adjust based on volatility to better compensate for loss.</li>
+<li>Automated rebalancing or hedging strategies (e.g., buying options to offset IL).</li>
+<li>Other custom curves or protections.</li>
 </ul>
-</blockquote>
+</li>
+<li>However, these are <strong>optional</strong> and depend on the specific pool. In a basic V4 pool without advanced hooks, IL behaves
+exactly as in V3.</li>
+<li>V4&rsquo;s official documentation confirms concentrated liquidity has the &ldquo;same core implementation&rdquo; as V3.</li>
+</ul>
 </article>
  
       
@@ -852,16 +904,16 @@ of a smart contract guarantees contract enforcement</li>
   <div class="flex flex-wrap justify-between">
     <span>
     
-      <a href="../../docs/networks/offchains.html" class="flex align-center">
+      <a href="../../docs/uniswap/aave_uniswap.html" class="flex align-center">
         <img src="../../icons/backward.svg" class="book-icon" alt="Backward" />
-        <span>Offchains</span>
+        <span>AAVE and Uniswap</span>
       </a>
     
     </span>
     <span>
     
-      <a href="../../docs/smart_contracts/polymarket.html" class="flex align-center">
-        <span>Polymarket</span>
+      <a href="../../docs/uniswap/concentrated_liq.html" class="flex align-center">
+        <span>Concentrated Liquidity</span>
         <img src="../../icons/forward.svg" class="book-icon" alt="Forward" />
       </a>
     
@@ -901,12 +953,14 @@ of a smart contract guarantees contract enforcement</li>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
+    <li><a href="#impermanent-loss-in-uniswap-v3">Impermanent Loss in Uniswap V3</a>
       <ul>
-        <li></li>
+        <li><a href="#simple-example-ethusdc-pool">Simple Example (ETH/USDC pool)</a></li>
+        <li><a href="#why-uniswap-v3-is-different">Why Uniswap V3 is different</a></li>
+        <li><a href="#core-mechanism-remains-the-same">Core Mechanism Remains the Same</a></li>
       </ul>
     </li>
+    <li><a href="#key-differences-in-v4">Key Differences in V4</a></li>
   </ul>
 </nav>
 

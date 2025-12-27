@@ -8,25 +8,27 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts# ">
+<meta name="description" content="Layer 2 (L2) Networks# In the world of Decentralized Finance (DeFi), Layer 2 (L2) solutions are essential for scaling blockchain networks like Ethereum, reducing congestion and high gas fees on the base layer (Layer 1). An L2 order book refers to a trading mechanism built on these scalable layers, where buy and sell orders for cryptocurrencies or tokens are matched in a transparent, decentralized manner. Unlike Automated Market Makers (AMMs) that rely on liquidity pools, an order book model lists all open orders by price and quantity, allowing traders to place limit orders, market orders, or stop-loss orders directly on the L2 chain. This provides tighter spreads, better price discovery, and lower slippage for high-volume trades.
+">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/smart_contracts/index.html">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/trading/l2-market-order.html">
   <meta property="og:site_name" content="DeFi Scholar">
-  <meta property="og:title" content="Smart Contracts">
-  <meta property="og:description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
+  <meta property="og:title" content="L2 Order Book">
+  <meta property="og:description" content="Layer 2 (L2) Networks# In the world of Decentralized Finance (DeFi), Layer 2 (L2) solutions are essential for scaling blockchain networks like Ethereum, reducing congestion and high gas fees on the base layer (Layer 1). An L2 order book refers to a trading mechanism built on these scalable layers, where buy and sell orders for cryptocurrencies or tokens are matched in a transparent, decentralized manner. Unlike Automated Market Makers (AMMs) that rely on liquidity pools, an order book model lists all open orders by price and quantity, allowing traders to place limit orders, market orders, or stop-loss orders directly on the L2 chain. This provides tighter spreads, better price discovery, and lower slippage for high-volume trades.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
 
 
-  <meta itemprop="name" content="Smart Contracts">
-  <meta itemprop="description" content="What are smart contracts?# Smart contracts are programs (code) that run on the blockchain networks Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025. Smart contracts execute logic that moves tokens between wallets The execution is automated. Once the contract is started, there’s no stopping or changing it Anyone can create and deploy smart contracts An easy example would be creating a pool for a fantasy football league Fantasy League Pool &amp; Payouts via Smart Contracts#">
-  <meta itemprop="wordCount" content="215">
+  <meta itemprop="name" content="L2 Order Book">
+  <meta itemprop="description" content="Layer 2 (L2) Networks# In the world of Decentralized Finance (DeFi), Layer 2 (L2) solutions are essential for scaling blockchain networks like Ethereum, reducing congestion and high gas fees on the base layer (Layer 1). An L2 order book refers to a trading mechanism built on these scalable layers, where buy and sell orders for cryptocurrencies or tokens are matched in a transparent, decentralized manner. Unlike Automated Market Makers (AMMs) that rely on liquidity pools, an order book model lists all open orders by price and quantity, allowing traders to place limit orders, market orders, or stop-loss orders directly on the L2 chain. This provides tighter spreads, better price discovery, and lower slippage for high-volume trades.">
+  <meta itemprop="wordCount" content="479">
 
-<title>Smart Contracts | DeFi Scholar</title>
+<title>L2 Order Book | DeFi Scholar</title>
 <link rel="icon" href="../../favicon.png" >
 <link rel="manifest" href="../../manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/smart_contracts/index.html">
+<link rel="canonical" href="http://localhost:1313/docs/trading/l2-market-order.html">
 <link rel="stylesheet" href="../../book.min.de560c44345cf0084702c0002756f29c4cb66637859c7c0fc5af45a9cc18ce3a.css" integrity="sha256-3lYMRDRc8AhHAsAAJ1bynEy2ZjeFnHwPxa9FqcwYzjo=" crossorigin="anonymous">
 
 
@@ -34,7 +36,6 @@ https://github.com/alex-shpak/hugo-book
   <script defer src="../../en.search.min.14dfbf4a41b5b534a453ebde5d664647cee1179991b997f6775fbb891af5b201.js" integrity="sha256-FN&#43;/SkG1tTSkU&#43;veXWZGR87hF5mRuZf2d1&#43;7iRr1sgE=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/smart_contracts/index.xml" title="DeFi Scholar" />
 
   <style>
      
@@ -114,7 +115,7 @@ https://github.com/alex-shpak/hugo-book
     [data-theme="dark"] #theme-toggle .moon { display: none; }
 </style>
 </head>
-<body dir="ltr" class="book-kind-section book-type-docs">
+<body dir="ltr" class="book-kind-page book-type-docs">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
@@ -366,9 +367,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle" checked />
+    <input type="checkbox" id="section-a6f937de2aa2e353b067b93487b7739b" class="toggle"  />
     <label for="section-a6f937de2aa2e353b067b93487b7739b" class="flex">
-      <a href="../../docs/smart_contracts/index.html" class="active">
+      <a href="../../docs/smart_contracts/index.html" class="">
         Smart Contracts</a>
       <img src="../../icons/chevron-right.svg" class="book-icon" alt="Expand" />
     </label>
@@ -524,7 +525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-86968454265bdfa8453ede0de31a21dc" class="toggle"  />
+    <input type="checkbox" id="section-86968454265bdfa8453ede0de31a21dc" class="toggle" checked />
     <label for="section-86968454265bdfa8453ede0de31a21dc" class="flex">
       <a href="../../docs/trading/index.html" class="">
         Trading</a>
@@ -542,7 +543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../docs/trading/l2-market-order.html" class="">
+    <a href="../../docs/trading/l2-market-order.html" class="active">
       L2 Order Book</a>
   
 
@@ -752,7 +753,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="../../icons/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Smart Contracts</h3>
+  <h3>L2 Order Book</h3>
 
   <label for="toc-control">
     
@@ -768,12 +769,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#layer-2-l2-networks">Layer 2 (L2) Networks</a></li>
+    <li><a href="#how-l2-order-books-work">How L2 Order Books Work</a></li>
+    <li><a href="#what-is-a-limit-order">What is a Limit Order?</a></li>
+    <li><a href="#key-advantages">Key Advantages</a></li>
+    <li><a href="#challenges">Challenges</a></li>
   </ul>
 </nav>
 
@@ -786,44 +786,51 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h2 id="what-are-smart-contracts">What are smart contracts?<a class="anchor" href="#what-are-smart-contracts">#</a></h2>
-<blockquote class="book-hint info">
+  <article class="markdown book-article"><h2 id="layer-2-l2-networks">Layer 2 (L2) Networks<a class="anchor" href="#layer-2-l2-networks">#</a></h2>
+<p>In the world of Decentralized Finance (DeFi), Layer 2 (L2) solutions are essential for scaling blockchain networks like Ethereum, reducing congestion and high gas fees on the base layer (Layer 1). An L2 order book refers to a trading mechanism built on these scalable layers, where buy and sell orders for cryptocurrencies or tokens are matched in a transparent, decentralized manner.
+Unlike Automated Market Makers (AMMs) that rely on liquidity pools, an order book model lists all open orders by price and quantity, allowing traders to place limit orders, market orders, or stop-loss orders directly on the L2 chain. This provides tighter spreads, better price discovery, and lower slippage for high-volume trades.</p>
+<h2 id="how-l2-order-books-work">How L2 Order Books Work<a class="anchor" href="#how-l2-order-books-work">#</a></h2>
+<blockquote class="book-hint success">
 <ul>
-<li>Smart contracts are programs (code) that run on the blockchain networks</li>
-<li>Ethereum started it. Solana scaled it. The rest are racing to own DeFi in 2025.</li>
-<li>Smart contracts execute logic that moves tokens between wallets</li>
-<li>The execution is automated. Once the contract is started, there’s no stopping or changing it</li>
-<li>Anyone can create and deploy smart contracts</li>
-<li>An easy example would be creating a pool for a fantasy football league</li>
-</ul>
+<li><strong>Order Placement</strong>: Traders submit buy (bid) or sell (ask) orders via a smart contract on the L2 network. These orders are batched and executed off-chain for efficiency but settled on-chain for security.</li>
+<li><strong>Matching Engine</strong>: A decentralized matching engine (often using zero-knowledge proofs or optimistic rollups) pairs compatible orders. For example, a buy order at $100 will match a sell order at or below that price.</li>
+<li><strong>Settlement</strong>: Trades are finalized on the L2 layer with minimal fees, and assets are transferred atomically via wrapped tokens or bridges.
 </blockquote>
-<h2 id="fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts<a class="anchor" href="#fantasy-league-pool--payouts-via-smart-contracts">#</a></h2>
-<p><img src="../../images/smart_contract_pool.jpg" alt="Fantasy League Pool" title="Pool Example"/></p>
+</li>
+</ul>
+<h2 id="what-is-a-limit-order">What is a Limit Order?<a class="anchor" href="#what-is-a-limit-order">#</a></h2>
 <blockquote class="book-hint info">
-<h4 id="pool-creation"><strong>Pool Creation</strong><a class="anchor" href="#pool-creation">#</a></h4>
+<p>A limit order is an instruction to buy or sell an asset at a specific price or better.</p>
 <ul>
-<li>Smart contract is <strong>deployed</strong> with rules: entry fee (e.g., 0.01 ETH), max players, deadline, payout structure (1st:
-50%, 2nd: 30%, 3rd: 20%)</li>
-<li>Contract <strong>accepts deposits</strong> — each player sends crypto to the <strong>contract address</strong> (not a person)</li>
+<li><strong>Buy limit order:</strong> You specify a maximum price you&rsquo;re willing to pay. The order only executes if the asset&rsquo;s price falls to or below your limit price.</li>
+<li><strong>Sell limit order:</strong> You specify a minimum price you&rsquo;re willing to accept. The order only executes if the asset&rsquo;s price rises to or above your limit price.</li>
 </ul>
-<h4 id="entry--commitment"><strong>Entry &amp; Commitment</strong><a class="anchor" href="#entry--commitment">#</a></h4>
-<ul>
-<li>Players <strong>submit team rosters</strong></li>
-<li>Contract <strong>locks funds</strong> until league ends — no refunds after deadline (enforced by code)</li>
-</ul>
-<h4 id="score-tracking-oracle-integration"><strong>Score Tracking (Oracle Integration)</strong><a class="anchor" href="#score-tracking-oracle-integration">#</a></h4>
-<ul>
-<li>Smart contract pulls <strong>real player</strong> stats from a trusted Oracle (e.g., Chainlink)</li>
-<li>Oracle is a <strong>third party</strong> that provides data to smart contracts</li>
-</ul>
-<h4 id="automatic-payouts"><strong>Automatic Payouts</strong><a class="anchor" href="#automatic-payouts">#</a></h4>
-<ul>
-<li>At league end, distributePrizes() triggers: first place → 50% of pool, second → 30%, third → 20%</li>
-<li>Funds sent <strong>directly to winners’ wallets — no manual payout, no trust needed</strong> – this is where the automatic
-execution
-of a smart contract guarantees contract enforcement</li>
-</ul>
+<p>Unlike market orders (which execute immediately at the current best available price), limit orders are not guaranteed to fill—they remain open in the order book until the market reaches your specified price or you cancel them.</p>
+<p><strong>Example:</strong>
+You believe ETH is worth $4,000 but don&rsquo;t want to buy above $3,950. You place a buy limit order at $3,950.
+If the market price drops to $3,950 or lower, your order may be filled. If it never reaches that level, the order stays open.</p>
+<p>Limit orders are the most common order type in order book-based systems and are essential for strategies that require precise entry or exit prices.</p>
 </blockquote>
+<h2 id="key-advantages">Key Advantages<a class="anchor" href="#key-advantages">#</a></h2>
+<blockquote class="book-hint success">
+<ul>
+<li><strong>Low fees and high speed:</strong>  Trades cost pennies and settle in milliseconds.</li>
+<li><strong>Better price discovery:</strong>  Limit orders enable tighter spreads and reduced slippage.</li>
+<li><strong>Advanced trading features:</strong>  Support for stop-loss, take-profit, and iceberg orders.</li>
+<li><strong>Transparency:</strong> All open orders are visible in the order book.
+</blockquote>
+</li>
+</ul>
+<h2 id="challenges">Challenges<a class="anchor" href="#challenges">#</a></h2>
+<blockquote class="book-hint danger">
+<ul>
+<li><strong>Liquidity fragmentation:</strong> Multiple L2s can split liquidity.</li>
+<li><strong>Cross-chain complexity:</strong> Moving assets between layers requires bridges.</li>
+<li><strong>Centralization risks:</strong> Some L2 matching engines may be semi-centralized for performance.
+</blockquote>
+</li>
+</ul>
+<p>L2 order books combine the precision of centralized exchanges with the security and decentralization of blockchain technology.</p>
 </article>
  
       
@@ -852,16 +859,16 @@ of a smart contract guarantees contract enforcement</li>
   <div class="flex flex-wrap justify-between">
     <span>
     
-      <a href="../../docs/networks/offchains.html" class="flex align-center">
+      <a href="../../docs/trading/index.html" class="flex align-center">
         <img src="../../icons/backward.svg" class="book-icon" alt="Backward" />
-        <span>Offchains</span>
+        <span>Trading</span>
       </a>
     
     </span>
     <span>
     
-      <a href="../../docs/smart_contracts/polymarket.html" class="flex align-center">
-        <span>Polymarket</span>
+      <a href="../../docs/trading/margin-loans.html" class="flex align-center">
+        <span>Margin Loans</span>
         <img src="../../icons/forward.svg" class="book-icon" alt="Forward" />
       </a>
     
@@ -901,12 +908,11 @@ of a smart contract guarantees contract enforcement</li>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-are-smart-contracts">What are smart contracts?</a></li>
-    <li><a href="#fantasy-league-pool--payouts-via-smart-contracts">Fantasy League Pool &amp; Payouts via Smart Contracts</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#layer-2-l2-networks">Layer 2 (L2) Networks</a></li>
+    <li><a href="#how-l2-order-books-work">How L2 Order Books Work</a></li>
+    <li><a href="#what-is-a-limit-order">What is a Limit Order?</a></li>
+    <li><a href="#key-advantages">Key Advantages</a></li>
+    <li><a href="#challenges">Challenges</a></li>
   </ul>
 </nav>
 
