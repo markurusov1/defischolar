@@ -1,8 +1,10 @@
 #baseURL = 'https://markurusov1.github.io/defischolar_site/'
+baseURL = 'defischolar_site/'
 languageCode = 'en-us'
 title = 'DeFi Scholar'
 
 canonifyURLs = true
+#relativeURLs = true
 
 [module]
 [[module.imports]]
